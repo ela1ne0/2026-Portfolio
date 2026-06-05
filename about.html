@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Elaine Yu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/dragon png - left facing copy.png">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="logo" href="index.html">ELAINE 俞</a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="play.html">Play</a>
+        <a class="active" href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="about-grid-page">
+      <aside class="side-card tall-sidebar" aria-label="Portfolio navigation">
+        <div class="side-section">
+          <h2>Selected Work</h2>
+          <a href="index.html#healthhound">Health Hound</a>
+          <a href="index.html#hackduke">HackDuke 2026</a>
+          <a href="index.html#flood">Nebraska Flood<br>Outreach</a>
+        </div>
+        <div class="side-section bottom-side-section">
+          <h2>Other</h2>
+          <a href="play.html">Play</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </aside>
+
+      <section class="about-content-stack">
+        <article class="soft-panel about-story">
+          <h1>Today</h1>
+          <p>I’m a designer and student at Duke University, currently working at IBM on the IBM Z DevOps Design Team.</p>
+
+          <h2>Growth</h2>
+          <p>I’m a product and visual designer studying Computer Science and Visual Media Studies. I’m passionate about building complex, narrative-driven digital experiences with a high bar for polish and a focus on social impact.</p>
+          <p>I enjoy building things end-to-end — from early sketches and prototypes to polished interfaces and working code. I lean into LLMs as tools, allowing me to focus more on storytelling and thoughtful interaction.</p>
+          <p>I want to design tools and experiences that feel intuitive, playful, and carefully crafted.</p>
+        </article>
+
+        <article class="soft-panel experience-panel">
+          <h2>Recent Experiences</h2>
+          <div class="experience-row">
+            <img src="assets/icons/ibm.png" alt="IBM logo" onerror="this.style.display='none'">
+            <span>Z DevOps UX Design Intern</span>
+            <time>May 2026 - Present</time>
+          </div>
+          <div class="experience-row">
+            <img src="assets/icons/hackduke.png" alt="HackDuke logo" onerror="this.style.display='none'">
+            <span>UI/UX Lead</span>
+            <time>Sept 2025 - Present</time>
+          </div>
+          <div class="experience-row">
+            <img src="assets/icons/nebraska.png" alt="Nebraska logo" onerror="this.style.display='none'">
+            <span>Product Design and Research Intern</span>
+            <time>June 2024 - Aug 2025</time>
+          </div>
+        </article>
+      </section>
+
+      <section class="photo-grid" aria-label="Personal photo cards">
+        <figure class="photo-card">
+          <img src="assets/about/chapel headshot - cropped.jpg" alt="Elaine portrait" onerror="this.parentElement.classList.add('missing-image')">
+          <figcaption>currently interning @ IBM!</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/about/hackduke.jpg" alt="Hackathon organizing" onerror="this.parentElement.classList.add('missing-image')">
+          <figcaption>organizing Duke’s largest hackathon</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/about/food.jpg" alt="Trying food" onerror="this.parentElement.classList.add('missing-image')">
+          <figcaption>i’m a huge foodie!</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/about/field portrait.jpg" alt="Elaine outdoors" onerror="this.parentElement.classList.add('missing-image')">
+          <figcaption>i’m a huge foodie!</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">© <span id="year"></span> Elaine Yu</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
