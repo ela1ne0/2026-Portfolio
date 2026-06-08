@@ -32,10 +32,18 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background: var(--white);
-  cursor: none;
 }
 
-@media (hover: none) {
+@media (hover: hover) {
+  body { cursor: none; }
+  #fish-cur {
+    display: block !important;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
   body { cursor: auto; }
   #fish-cur { display: none !important; }
 }
@@ -147,9 +155,12 @@ img { max-width: 100%; display: block; }
   gap: clamp(16px, 2.5vh, 32px);
   padding: clamp(32px, 5vw, 56px) 0 clamp(120px, 18vh, 200px);
   pointer-events: none;
+  cursor: default;
 }
 
-.status-pill { pointer-events: auto; }
+.hero-text * { cursor: default; }
+
+.status-pill { pointer-events: auto; cursor: default; }
 
 .hero-headline {
   margin: 0;
@@ -234,7 +245,8 @@ img { max-width: 100%; display: block; }
 }
 
 #amb-canvas { z-index: 1; pointer-events: none; }
-#fish-canvas { z-index: 3; cursor: none; }
+#fish-canvas { z-index: 3; cursor: none; pointer-events: none; }
+.hero-visual #fish-canvas { pointer-events: auto; }
 
 #bubble-tip {
   position: fixed;
@@ -525,17 +537,21 @@ img { max-width: 100%; display: block; }
 #fish-cur {
   --cur-flip: 1;
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
+  display: block;
+  visibility: visible;
+  opacity: 1;
   pointer-events: none;
   transform: translate(-50%, -50%) scaleX(var(--cur-flip));
   will-change: left, top;
 }
 
 #fish-cur img {
-  width: 44px;
+  width: 36px;
   height: auto;
   display: block;
   pointer-events: none;
+  mix-blend-mode: lighten;
 }
 
 #fish-cur.hovering { transform: translate(-50%, -50%) scaleX(var(--cur-flip)) scale(1.4); }

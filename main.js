@@ -2,11 +2,21 @@
   'use strict';
 
   const BUBBLES = [
-    { key: 'ibm', emoji: '💼', title: 'IBM Z DevOps', sub: 'Designing for 10k+ enterprise engineers. Complex systems, zero tolerance for confusion.', rx: 0.50, ry: 0.14, r: 47, ph: 0, sp: 0.007 },
-    { key: 'hack', emoji: '⚡', title: 'UI/UX Lead @ HackDuke', sub: "Duke's largest hackathon. 80% registration increase, 500+ participants.", rx: 0.74, ry: 0.26, r: 42, ph: 2.2, sp: 0.009 },
-    { key: 'camera', emoji: '📷', title: 'Digital photographer', sub: 'Canon R50. Every trip becomes a photoset. Currently shooting around Durham.', rx: 0.79, ry: 0.48, r: 36, ph: 0.7, sp: 0.008 },
-    { key: 'food', emoji: '🍜', title: 'Serious foodie', sub: "Will research a city's restaurant scene before packing. Always has a list.", rx: 0.52, ry: 0.76, r: 38, ph: 3.0, sp: 0.009 },
-    { key: 'music', emoji: '🎵', title: 'Playlist curator', sub: 'Every mood gets its own playlist. Currently: indie folk + lo-fi R&B.', rx: 0.65, ry: 0.60, r: 33, ph: 1.7, sp: 0.008 },
+    { key:'ibm',    emoji:'💼', title:'IBM Z DevOps',
+      sub:'Designing for 10k+ enterprise engineers. Zero tolerance for confusion.',
+      rx:0.54, ry:0.18, r:32, ph:0,   sp:0.007 },
+    { key:'hack',   emoji:'⚡', title:'UI/UX Lead @ HackDuke',
+      sub:"Duke's largest hackathon. 80% registration increase, 500+ participants.",
+      rx:0.64, ry:0.28, r:27, ph:2.2, sp:0.009 },
+    { key:'camera', emoji:'📷', title:'Digital photographer',
+      sub:'Canon R50. Every trip becomes a photoset.',
+      rx:0.58, ry:0.50, r:23, ph:0.7, sp:0.008 },
+    { key:'food',   emoji:'🍜', title:'Serious foodie',
+      sub:"Will research a city's restaurant scene before packing.",
+      rx:0.76, ry:0.58, r:25, ph:3.0, sp:0.009 },
+    { key:'music',  emoji:'🎵', title:'Playlist curator',
+      sub:'Every mood gets its own playlist. Indie folk + lo-fi R&B.',
+      rx:0.68, ry:0.72, r:21, ph:1.7, sp:0.008 },
   ];
 
   const ROTATING = [
@@ -30,7 +40,7 @@
     return Math.max(-FISH_TILT_MAX, Math.min(FISH_TILT_MAX, t));
   }
 
-  const isTouch = window.matchMedia('(hover: none)').matches;
+  const hasHover = window.matchMedia('(hover: hover)').matches;
 
   BUBBLES.forEach((b) => { b.scale = 1; });
 
@@ -65,7 +75,10 @@
   let curVy = 0;
   let curFacingRight = true;
 
-  if (curEl && !isTouch) {
+  if (curEl && hasHover) {
+    curEl.style.left = curMx + 'px';
+    curEl.style.top = curMy + 'px';
+
     document.addEventListener('mousemove', (e) => {
       curVx = e.clientX - curMx;
       curVy = e.clientY - curMy;
@@ -120,7 +133,7 @@
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: false,
+        hour12: true,
         timeZone: 'America/New_York',
       });
     }
@@ -272,11 +285,11 @@
 
   let mouseX = 0;
   let mouseY = 0;
-  let mouseOnRight = false;
+  let mouseInside = false;
 
   function clampFish() {
-    fish.x = Math.max(W * 0.46, fish.x);
-    fish.y = Math.max(H * 0.12, Math.min(H * 0.88, fish.y));
+    fish.x = Math.max(W * 0.36, fish.x);
+    fish.y = Math.max(H * 0.10, Math.min(H * 0.90, fish.y));
   }
 
   function updateFish() {
@@ -285,17 +298,17 @@
     fish.vx *= 0.92;
     fish.vy *= 0.92;
 
-    let tx = W * 0.66 + Math.cos(idleT * 0.42) * W * 0.14;
-    let ty = H * 0.44 + Math.sin(idleT * 0.28) * H * 0.16;
-    const followCursor = mouseOnRight && hoveredBubble === -1;
-    if (followCursor) {
+    let tx = W * 0.68 + Math.cos(idleT * 0.38) * W * 0.14;
+    let ty = H * 0.42 + Math.sin(idleT * 0.26) * H * 0.22;
+    const onRight = mouseInside && mouseX > W * 0.36 && hoveredBubble === -1;
+    if (onRight) {
       tx = mouseX;
       ty = mouseY;
     }
 
     const dx = tx - fish.x;
     const dy = ty - fish.y;
-    if (followCursor) {
+    if (onRight) {
       fish.vx = lerp(fish.vx, dx * 0.032, 0.08);
       fish.vy = lerp(fish.vy, dy * 0.032, 0.08);
     } else {
@@ -351,14 +364,14 @@
     const rect = fishCanvas.getBoundingClientRect();
     mouseX = e.clientX - rect.left;
     mouseY = e.clientY - rect.top;
-    mouseOnRight = mouseX > W * 0.44;
+    mouseInside = true;
     hoveredBubble = hitTestBubbles(mouseX, mouseY);
     fishCanvas.style.cursor = hoveredBubble >= 0 ? 'pointer' : 'none';
     if (hoveredBubble < 0) hideBubbleTip();
   });
 
   fishCanvas.addEventListener('mouseleave', () => {
-    mouseOnRight = false;
+    mouseInside = false;
     hoveredBubble = -1;
     fishCanvas.style.cursor = 'none';
     hideBubbleTip();
