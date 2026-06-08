@@ -3,124 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elaine Yu</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Elaine Yu — Product & Visual Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Syne:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="logo" href="index.html">ELAINE &#20446;</a>
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a class="active" href="index.html">Home</a>
-        <a href="play.html">Play</a>
-        <a href="about.html">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="site-nav">
+    <a class="nav-logo" href="index.html">Elaine 俞</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="play.html">Play</a>
+      <a href="about.html">About</a>
+      <a href="mailto:elaineyustudio@gmail.com">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="landing-stage" id="home">
-        <aside class="side-card home-sidebar" aria-label="Selected work navigation">
-          <div class="folder-title"><span class="folder-icon"></span><span>Selected Work</span></div>
-          <a href="#healthhound">Health Hound</a>
-          <a href="#hackduke">HackDuke 2026</a>
-          <a href="#flood">Nebraska Flood<br>Outreach</a>
-          <a class="resume-link" href="assets/Elaine Yu Resume.pdf">Resume</a>
-        </aside>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-blur hero-blur-a" aria-hidden="true"></div>
+      <div class="hero-blur hero-blur-b" aria-hidden="true"></div>
 
-        <section class="dream-panel" aria-label="Intro">
-          <div class="bubble bubble-main">
-            <div class="bubble-name">Elaine Yu</div>
-            <h1>designs at the intersection of code, illustration, and storytelling</h1>
-          </div>
-          <div class="bubble bubble-small bubble-one"></div>
-          <div class="bubble bubble-small bubble-two"></div>
-          <p class="hero-subtitle">She&rsquo;s probably... <span id="hero-action">tweaking her portfolio for the Nth time</span></p>
-        </section>
-
-        <a class="scroll-cue" href="#work" aria-label="Scroll to selected work"></a>
-      </section>
-
-      <section class="section" id="work">
-        <div class="section-heading-row">
-          <h2>Selected Work</h2>
-          <p>Product design, web systems, and social-impact storytelling.</p>
-        </div>
-
-        <div class="work-list">
-          <article class="work-card" id="healthhound">
-            <div class="work-thumb"><img src="assets/health hound/health hound ss 2.png" alt="Health Hound interface thumbnail"></div>
-            <div class="work-copy">
-              <p class="eyebrow">March 2026 &middot; Product Design &middot; UI/UX &middot; Brand</p>
-              <h3>HealthHound - FigBuild 2026</h3>
-              <p class="impact">Designing a wearable system that translates invisible chemical signals into health insights.</p>
-              <p>Inspired by dogs&rsquo; extraordinary scent detection abilities, we created a product and app that effectively gives humans a new sensory layer for understanding their own health.</p>
-              <div class="inline-links">
-                <a href="work/healthhound.html">Read More &rarr;</a>
-                <a href="https://www.figma.com/deck/ydabbmcwUAiDGAld7GBEkF/HealthHound---Send-Share-vers?node-id=2-229&t=3fCmq80VfPmeaaWy-1" target="_blank" rel="noopener noreferrer">View Pitch &rarr;</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card" id="hackduke">
-            <div class="work-thumb"><img src="assets/hackduke page/landing page - by elaine (better vers) + big.png" alt="HackDuke redesign thumbnail"></div>
-            <div class="work-copy">
-              <p class="eyebrow">2025 - Present &middot; UI/UX Lead &middot; Brand &amp; Web</p>
-              <h3>HackDuke 2026</h3>
-              <p class="impact">Redesigning the registration experience for 500+ annual participants, increasing total registrations by 80%.</p>
-              <p>Led the end-to-end redesign of the landing page and visual system. Accelerated early-stage design by 30% using rapid prototyping tools and unified 10+ digital assets into a cohesive brand.</p>
-              <div class="inline-links">
-                <a href="work/hackduke-2026.updated.html">Read More &rarr;</a>
-                <a href="https://2026.hackduke.org/" target="_blank" rel="noopener noreferrer">View Website &rarr;</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card" id="flood">
-            <div class="work-thumb"><img src="assets/NE flood page/landing page - updated.png" alt="Nebraska Flood Outreach thumbnail"></div>
-            <div class="work-copy">
-              <p class="eyebrow">June 2024 - August 2025 &middot; Product Design Intern &middot; Research</p>
-              <h3>Nebraska Flood Outreach</h3>
-              <p class="impact">Translating complex GIS data into accessible visuals reaching 8,000+ residents across 59 rural communities.</p>
-              <p>Designed user-centered flood-risk outreach adopted by U.S. HUD-related stakeholders. Reduced disaster outreach iteration time by 30% through AI-assisted design and human-led review.</p>
-              <div class="inline-links">
-                <a href="work/nebraska-flood.updated.html">Read More &rarr;</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section about-preview" id="about-preview">
-        <div class="soft-panel two-col">
-          <div>
-            <p class="eyebrow">About</p>
-            <h2>Product and visual designer at Duke University.</h2>
-            <p>I&rsquo;m studying Computer Science and Visual Media Studies, and I&rsquo;m passionate about building complex, narrative-driven digital experiences with a high bar for polish and a focus on social impact.</p>
-          </div>
-          <a class="round-button" href="about.html">More about Elaine &rarr;</a>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div class="soft-panel">
-          <p class="eyebrow">Contact</p>
-          <h2>Thanks for stopping by!</h2>
-          <p>For collaborations, opportunities, or just to say hi, feel free to reach out.</p>
-          <div class="contact-links">
-            <a href="mailto:elaineyustudio@gmail.com">elaineyustudio@gmail.com</a>
-            <a href="https://www.linkedin.com/in/elaine-yu1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-headline anim-in" style="--delay:150ms">
+            Elaine Yu<br />
+            <span class="headline-accent">makes things feel</span><br />
+            like they were made<br />
+            by a person
+          </h1>
+          <p class="hero-desc anim-in" style="--delay:260ms">
+            Product &amp; Visual Designer at Duke University.<br />
+            Currently building and designing enterprise tools at IBM.
+          </p>
+          <p class="hero-rotating anim-in" style="--delay:440ms">
+            She's probably... <span id="rotating-phrase">tweaking her portfolio for the Nth time</span>
+          </p>
+          <div class="status-pill anim-in" style="--delay:360ms">
+            <span class="status-star" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 88 86" fill="none">
+                <path d="M44 4 L52 32 L82 34 L58 52 L66 82 L44 64 L22 82 L30 52 L6 34 L36 32 Z" fill="#B4CBF8"/>
+                <path d="M44 18 L49 36 L67 37 L52 48 L57 66 L44 56 L31 66 L36 48 L21 37 L39 36 Z" fill="#84A6E7"/>
+              </svg>
+            </span>
+            Durham, NC · <span id="live-time" class="live-time">--:--:--</span> EDT · interning @ IBM
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">&copy; <span id="year"></span> Elaine Yu</footer>
+        <div class="hero-visual">
+          <canvas id="amb-canvas" aria-hidden="true"></canvas>
+          <canvas id="fish-canvas" aria-hidden="true"></canvas>
+        </div>
+      </div>
+
+      <a class="scroll-cue anim-in" href="#work" style="--delay:950ms">
+        <svg class="scroll-arrow" width="20" height="28" viewBox="0 0 48 65" fill="none" aria-hidden="true">
+          <path d="M24 4 L24 52 M24 52 L8 36 M24 52 L40 36" stroke="currentColor" stroke-width="3.15" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        SELECTED WORK
+      </a>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-label">Selected Work</div>
+
+      <article class="work-card work-featured reveal">
+        <a class="work-card-link" href="work/nebraska-flood.html">
+          <div class="work-card-media">
+            <img src="https://ela1ne0.github.io/assets/NE%20flood%20page/landing%20page%20-%20updated.png" alt="Nebraska Flood Outreach project preview" loading="lazy" />
+          </div>
+          <div class="work-card-copy">
+            <h2>Nebraska Flood Outreach</h2>
+            <p class="work-meta">Jun 2024 – Aug 2025 · Research · Social Impact</p>
+            <p class="work-desc">Translating complex GIS flood-risk data into accessible visuals — adopted by U.S. HUD-related stakeholders across 59 rural communities.</p>
+            <span class="work-stat">8,000+ residents reached</span>
+            <span class="work-cta">View case study ↗</span>
+          </div>
+        </a>
+      </article>
+
+      <div class="work-grid">
+        <article class="work-card reveal" style="--reveal-delay:80ms">
+          <a class="work-card-link" href="work/hackduke-2026.html">
+            <div class="work-card-media">
+              <img src="https://ela1ne0.github.io/assets/hackduke%20page/landing%20page%20-%20by%20elaine%20(better%20vers)%20+%20big.png" alt="HackDuke 2026 redesign preview" loading="lazy" />
+            </div>
+            <div class="work-card-copy">
+              <h2>HackDuke 2026</h2>
+              <p class="work-meta">2025–Present · UI/UX Lead · Brand</p>
+              <p class="work-desc">Redesigning the registration experience for 500+ annual participants, increasing total registrations by 80%.</p>
+              <span class="work-stat">↑ 80% registration increase</span>
+              <span class="work-cta">View case study ↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card reveal" style="--reveal-delay:160ms">
+          <a class="work-card-link" href="work/healthhound.html">
+            <div class="work-card-media">
+              <img src="https://ela1ne0.github.io/assets/health%20hound/health%20hound%20ss%202.png" alt="HealthHound product preview" loading="lazy" />
+            </div>
+            <div class="work-card-copy">
+              <h2>HealthHound</h2>
+              <p class="work-meta">March 2026 · Product Design · Brand</p>
+              <p class="work-desc">Designing a wearable system that translates invisible chemical signals into health insights.</p>
+              <span class="work-stat">FigBuild 2026 · Hackathon</span>
+              <span class="work-cta">View case study ↗</span>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <article class="work-card work-nda reveal" style="--reveal-delay:240ms">
+        <div class="work-card-copy work-nda-inner">
+          <p class="work-nda-label">UNDER NDA · IBM Z DEVOPS DESIGN</p>
+          <h2>Enterprise DevOps Design</h2>
+          <p class="work-desc">Reducing cognitive load for 10,000+ enterprise engineers navigating zero-tolerance DevOps workflows. Case study available on request.</p>
+          <a class="work-cta work-nda-cta" href="mailto:elaineyustudio@gmail.com">Ask me about it →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note"><em>coded by hand — no Framer, no Webflow. just good tea &amp; Cursor.</em></p>
+    <div class="footer-row">
+      <span>© 2026 Elaine Yu</span>
+      <div class="footer-links">
+        <a href="mailto:elaineyustudio@gmail.com">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/elaine-yu1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/ela1ne0" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="fish-cur" aria-hidden="true">
+    <img id="cur-fish" src="assets/fish-cursor.png" alt="" />
   </div>
 
-  <script src="script.js"></script>
+  <div id="bubble-tip">
+    <span id="tip-emoji"></span>
+    <div>
+      <strong id="tip-title"></strong>
+      <p id="tip-sub"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

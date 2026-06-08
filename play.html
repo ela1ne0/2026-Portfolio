@@ -3,64 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play – Elaine Yu</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/dragon png - left facing copy.png">
+  <title>Play — Elaine Yu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Syne:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="logo" href="index.html">ELAINE 俞</a>
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a class="active" href="play.html">Play</a>
-        <a href="about.html">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="site-nav">
+    <a class="nav-logo" href="index.html">Elaine 俞</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#work">Work</a>
+      <a class="active" href="play.html">Play</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="mailto:elaineyustudio@gmail.com">Say hi ↗</a>
+    </nav>
+  </header>
 
-    <main class="play-page">
-      <aside class="side-card tall-sidebar" aria-label="Portfolio navigation">
-        <div class="side-section">
-          <h2>Selected Work</h2>
-          <a href="index.html#healthhound">Health Hound</a>
-          <a href="index.html#hackduke">HackDuke 2026</a>
-          <a href="index.html#flood">Nebraska Flood<br>Outreach</a>
-        </div>
-        <div class="side-section bottom-side-section">
-          <h2>Other</h2>
-          <a href="play.html">Play</a>
-          <a href="about.html">About</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </aside>
+  <main>
+    <section class="page-hero">
+      <h1>Play</h1>
+      <p>things made outside of work</p>
+    </section>
 
-      <section class="play-content">
-        <div class="soft-panel play-intro">
-          <p class="eyebrow">Illustration · Visual Art · Small Projects</p>
-          <h1>Art & Personal Work</h1>
-          <p>Art, visual experiments, and little projects I make for fun!</p>
-        </div>
-
-        <div class="art-modern-grid">
-          <a class="art-card wide" href="#"><img src="assets/traditional art/adobe girl w background.png" alt="Genshin Impact Style Illustration"><span><b>Genshin Impact Style - Illustration</b><small>May 2026</small></span></a>
-          <a class="art-card" href="#"><video autoplay loop muted playsinline><source src="assets/traditional art/alumnifinderapp.mp4" type="video/mp4"></video><span><b>AlumniFinder App - Figma Make</b><small>Jan 2026</small></span></a>
-          <a class="art-card wide" href="#"><img src="assets/traditional art/yueshan 2d.jpg" alt="Yueshan illustration"><span><b>月山 - Procreate Illustration</b><small>2026</small></span></a>
-          <a class="art-card" href="#"><img src="assets/traditional art/Grandparent's_village.JPEG" alt="My Grandparent's Village Acrylic"><span><b>My Grandparent's Village - Acrylic</b><small>2024</small></span></a>
-          <a class="art-card" href="#"><img src="assets/traditional art/Houseonhill.jpeg" alt="House on a Hill Acrylic"><span><b>House on a Hill - Acrylic</b><small>2023</small></span></a>
-          <a class="art-card wide" href="#"><img src="assets/traditional art/3D Spline model.jpg" alt="SensoRing Spline prototype"><span><b>SensoRing - Spline Prototype</b><small>2026</small></span></a>
-          <a class="art-card tall" href="#"><img src="assets/traditional art/InterruptingSomething.jpeg" alt="Interrupting Something Acrylic"><span><b>Interrupting Something? - Acrylic</b><small>2025</small></span></a>
-          <a class="art-card" href="#"><img src="assets/traditional art/illustrations.png" alt="Recent illustrations"><span><b>Recent Illustrations</b><small>Jan 2026</small></span></a>
-          <a class="art-card wide" href="#"><img src="assets/traditional art/ChildlikeWonder.jpeg" alt="Childlike Wonder Acrylic"><span><b>Childlike Wonder - Acrylic</b><small>2024</small></span></a>
+    <div class="page-content">
+      <section class="play-section">
+        <h2>Photography</h2>
+        <div class="masonry">
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/about/chapel%20headshot%20-%20cropped.jpg" alt="Portrait in Durham" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/about/field%20portrait.jpg" alt="Outdoor portrait" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/about/food.jpg" alt="Food photography" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/about/hackduke.jpg" alt="HackDuke event" loading="lazy" /></div>
         </div>
       </section>
-    </main>
 
-    <footer class="site-footer">© <span id="year"></span> Elaine Yu</footer>
+      <section class="play-section">
+        <h2>UI explorations</h2>
+        <div class="masonry">
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/traditional%20art/adobe%20girl%20w%20background.png" alt="Genshin Impact style illustration" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/traditional%20art/yueshan%202d.jpg" alt="Yueshan illustration" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/traditional%20art/3D%20Spline%20model.jpg" alt="SensoRing Spline prototype" loading="lazy" /></div>
+          <div class="masonry-item"><img src="https://ela1ne0.github.io/assets/traditional%20art/illustrations.png" alt="Recent illustrations" loading="lazy" /></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note"><em>coded by hand — no Framer, no Webflow. just good tea &amp; Cursor.</em></p>
+    <div class="footer-row">
+      <span>© 2026 Elaine Yu</span>
+      <div class="footer-links">
+        <a href="mailto:elaineyustudio@gmail.com">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/elaine-yu1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/ela1ne0" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="fish-cur" aria-hidden="true">
+    <img id="cur-fish" src="assets/fish-cursor.png" alt="" />
   </div>
-  <script src="script.js"></script>
+
+  <script src="main.js"></script>
 </body>
 </html>

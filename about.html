@@ -3,94 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About – Elaine Yu</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/dragon png - left facing copy.png">
+  <title>About — Elaine Yu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Syne:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="logo" href="index.html">ELAINE 俞</a>
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="play.html">Play</a>
-        <a class="active" href="about.html">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="site-nav">
+    <a class="nav-logo" href="index.html">Elaine 俞</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#work">Work</a>
+      <a href="play.html">Play</a>
+      <a class="active" href="about.html">About</a>
+      <a class="nav-cta" href="mailto:elaineyustudio@gmail.com">Say hi ↗</a>
+    </nav>
+  </header>
 
-    <main class="about-grid-page">
-      <aside class="side-card tall-sidebar" aria-label="Portfolio navigation">
-        <div class="side-section">
-          <h2>Selected Work</h2>
-          <a href="index.html#healthhound">Health Hound</a>
-          <a href="index.html#hackduke">HackDuke 2026</a>
-          <a href="index.html#flood">Nebraska Flood<br>Outreach</a>
-        </div>
-        <div class="side-section bottom-side-section">
-          <h2>Other</h2>
-          <a href="play.html">Play</a>
-          <a href="about.html">About</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </aside>
+  <main>
+    <section class="page-hero">
+      <h1>About</h1>
+    </section>
 
-      <section class="about-content-stack">
-        <article class="soft-panel about-story">
-          <h1>Today</h1>
-          <p>I’m a designer and student at Duke University, currently working at IBM on the IBM Z DevOps Design Team.</p>
+    <div class="page-content">
+      <p>
+        I'm a product and visual designer at Duke studying Computer Science and Visual Media Studies.
+        I like building things end-to-end — from early sketches to polished interfaces and working code —
+        and I care a lot about making complex systems feel human. Right now I'm at IBM on the Z DevOps design team,
+        making enterprise tools a little less painful to look at.
+      </p>
 
-          <h2>Growth</h2>
-          <p>I’m a product and visual designer studying Computer Science and Visual Media Studies. I’m passionate about building complex, narrative-driven digital experiences with a high bar for polish and a focus on social impact.</p>
-          <p>I enjoy building things end-to-end — from early sketches and prototypes to polished interfaces and working code. I lean into LLMs as tools, allowing me to focus more on storytelling and thoughtful interaction.</p>
-          <p>I want to design tools and experiences that feel intuitive, playful, and carefully crafted.</p>
-        </article>
-
-        <article class="soft-panel experience-panel">
-          <h2>Recent Experiences</h2>
-          <div class="experience-row">
-            <img src="assets/icons/ibm.png" alt="IBM logo" onerror="this.style.display='none'">
-            <span>Z DevOps UX Design Intern</span>
-            <time>May 2026 - Present</time>
-          </div>
-          <div class="experience-row">
-            <img src="assets/icons/hackduke.png" alt="HackDuke logo" onerror="this.style.display='none'">
-            <span>UI/UX Lead</span>
-            <time>Sept 2025 - Present</time>
-          </div>
-          <div class="experience-row">
-            <img src="assets/icons/nebraska.png" alt="Nebraska logo" onerror="this.style.display='none'">
-            <span>Product Design and Research Intern</span>
-            <time>June 2024 - Aug 2025</time>
-          </div>
-        </article>
-      </section>
-
-      <section class="photo-grid" aria-label="Personal photo cards">
-        <figure class="photo-card">
-          <img src="assets/about/chapel headshot - cropped.jpg" alt="Elaine portrait" onerror="this.parentElement.classList.add('missing-image')">
-          <figcaption>currently interning @ IBM!</figcaption>
+      <div class="about-photos">
+        <figure class="about-photo">
+          <img src="https://ela1ne0.github.io/assets/about/chapel%20headshot%20-%20cropped.jpg" alt="Elaine at Duke Chapel" loading="lazy" />
+          <figcaption>currently interning @ IBM</figcaption>
         </figure>
-        <figure class="photo-card">
-          <img src="assets/about/hackduke.jpg" alt="Hackathon organizing" onerror="this.parentElement.classList.add('missing-image')">
-          <figcaption>organizing Duke’s largest hackathon</figcaption>
+        <figure class="about-photo">
+          <img src="https://ela1ne0.github.io/assets/about/hackduke.jpg" alt="HackDuke organizing" loading="lazy" />
+          <figcaption>organizing Duke's largest hackathon</figcaption>
         </figure>
-        <figure class="photo-card">
-          <img src="assets/about/food.jpg" alt="Trying food" onerror="this.parentElement.classList.add('missing-image')">
-          <figcaption>i’m a huge foodie!</figcaption>
+        <figure class="about-photo">
+          <img src="https://ela1ne0.github.io/assets/about/food.jpg" alt="Trying new food" loading="lazy" />
+          <figcaption>I'm a huge foodie</figcaption>
         </figure>
-        <figure class="photo-card">
-          <img src="assets/about/field portrait.jpg" alt="Elaine outdoors" onerror="this.parentElement.classList.add('missing-image')">
-          <figcaption>i’m a huge foodie!</figcaption>
+        <figure class="about-photo">
+          <img src="https://ela1ne0.github.io/assets/about/field%20portrait.jpg" alt="Elaine outdoors with camera" loading="lazy" />
+          <figcaption>taking pictures everywhere</figcaption>
         </figure>
-      </section>
-    </main>
+      </div>
 
-    <footer class="site-footer">© <span id="year"></span> Elaine Yu</footer>
+      <h2>Recent experience</h2>
+      <ul class="timeline">
+        <li>
+          <time>2025–present</time>
+          <span><strong>IBM Z DevOps Design</strong> — UX Design Intern</span>
+        </li>
+        <li>
+          <time>2025–present</time>
+          <span><strong>HackDuke</strong> — UI/UX Lead</span>
+        </li>
+        <li>
+          <time>Jun 2024–Aug 2025</time>
+          <span><strong>Nebraska Flood Outreach</strong> — Product Design &amp; Research Intern</span>
+        </li>
+      </ul>
+
+      <h2>When I'm not designing</h2>
+      <p>
+        You'll find me trying new restaurants in Durham (always with a list), curating playlists for whatever mood I'm in,
+        shooting on my Canon R50, catching up with friends, and occasionally reorganizing my Figma components for the fun of it.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note"><em>coded by hand — no Framer, no Webflow. just good tea &amp; Cursor.</em></p>
+    <div class="footer-row">
+      <span>© 2026 Elaine Yu</span>
+      <div class="footer-links">
+        <a href="mailto:elaineyustudio@gmail.com">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/elaine-yu1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/ela1ne0" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="fish-cur" aria-hidden="true">
+    <img id="cur-fish" src="assets/fish-cursor.png" alt="" />
   </div>
-  <script src="script.js"></script>
+
+  <script src="main.js"></script>
 </body>
 </html>
